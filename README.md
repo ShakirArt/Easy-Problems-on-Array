@@ -47,6 +47,38 @@ The program has a constant time complexity regardless of the input because the
 array size is fixed. It efficiently reverses the given string without any dependence on
 the input length.
 
+
+## Maximum Element
+
+In this code we’ll try to find the maximum element in an array is to compare each
+element with all other elements in the array. But we can optimize it by assuming an
+element as maximum and start traversing the array. If we find any element greater
+than the assumed max, we assume that element as the new max. Declaring an array
+of integers and initialize it with some values, or take the input from the user. Then
+declare a variable max to store the maximum element and initialize it with the first
+element of the array. Loop through the remaining elements of the array, starting from
+the second element. For each element, compare it with the max variable and check if
+it is greater than max. If yes, update the max variable with the current element. If no,
+continue the loop. After the loop, print the max variable as the largest element of the
+array.
+
+Since the array size is fixed, we can directly compare all elements without using a
+loop. This would reduce the number of iterations and improve efficiency. But this
+would cause complication for the programmer.
+
+In the worst-case scenario, we consider the maximum number of iterations executed
+by the program. The for loop iterates through the entire array of 5 elements. Each
+iteration involves a constant-time comparison and assignment operation. Therefore,
+the worst-case time complexity of this program is O(1) (constant time), as the size of
+the array is fixed and independent of the input.
+
+In the best-case scenario, we consider the minimum number of iterations executed by
+the program. The best-case occurs when the loop is not executed at all (i.e., the array
+contains only one element). In this case, the program performs no comparisons or
+assignments. Therefore, the best-case time complexity is also O(1) (constant time).
+
+
+
 ## URL
 
 https://www.geeksforgeeks.org/complete-guide-to-arrays-data-structure/
